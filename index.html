@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Music Festival</title>
+    <!-- Inter font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light gray background */
+        }
+        .header-bg {
+            background-image: url('http://googleusercontent.com/image_generation_content/0');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .register-button {
+            background-color: #facc15;
+            color: #1e3a8a;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+        .register-button:hover {
+            background-color: #fde047;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header Section with Background Image -->
+    <header class="header-bg relative shadow-lg">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <h1 class="relative z-10 text-white text-5xl md:text-6xl lg:text-7xl font-extrabold text-center tracking-tight">
+            Summer Music Festival
+        </h1>
+    </header>
+
+    <!-- Motivational Section -->
+    <main class="container mx-auto px-4 py-12 md:py-16">
+        <section id="motivation" class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">Unite in Worship. Celebrate Our Faith.</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Join us for an inspiring online Summer Music Festival, a day dedicated to celebrating our shared Christian faith through the power of music and fellowship. This event is a unique opportunity for believers from all corners of New York state to come together virtually, lifting our voices in praise and connecting with one another from the comfort of our homes.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+                Experience soul-stirring worship, powerful sermons, and heartfelt performances from talented Christian artists. It's more than just a concert; it's a gathering of a community united in spirit and purpose. Don't miss this chance to be uplifted, inspired, and renewed.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Mark your calendars for August 23rd. Let's make this a day of unforgettable praise and worship. We can't wait to see you there!
+            </p>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section id="register" class="bg-white p-8 md:p-12 rounded-3xl shadow-xl max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-8">Register to Join Us!</h2>
+            
+            <!-- This is a placeholder form. You can replace this section with your Google Form embed code. -->
+            <form action="#" method="post" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label for="contact" class="block text-sm font-medium text-gray-700">Contact (Number or Email)</label>
+                    <input type="text" id="contact" name="contact" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label for="location" class="block text-sm font-medium text-gray-700">Location in New York State</label>
+                    <input type="text" id="location" name="location" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                
+                <div class="text-center pt-4">
+                    <button type="submit" class="register-button px-8 py-4 rounded-full text-lg shadow-md hover:scale-105 transform transition duration-300 ease-in-out">
+                        Register Now
+                    </button>
+                </div>
+            </form>
+            
+            <!-- How to embed your Google Form: -->
+            <!-- 
+            <iframe src="YOUR_GOOGLE_FORM_EMBED_URL" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            -->
+        </section>
+
+    </main>
+
+</body>
+</html>
