@@ -91,7 +91,7 @@
                 var page = 0;
                   $('#redirect').load(function() {
                     page++;
-                    if ( page * 1 ) {  // Replace with Number of Pages in Survey
+                    if ( page > 1 ) {  // Replace with Number of Pages in Survey
                         document.location = "https://ny-bible.github.io/summer-music-festival/confirmation.html";  //  Replace with the Page you want to send them to
                     }
                   });
