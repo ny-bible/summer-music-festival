@@ -87,7 +87,15 @@
             <How to embed your Google Form: -->
             
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgd9PrplkVRvZjk2rHo5gIkU1cxZcBA_DV3CX_x4FkouXu3g/viewform?embedded=true" width="640" height="1398" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            
+            <script>
+                var page = 0;
+                  $('#redirect').load(function() {
+                    page++;
+                    if ( page * 1 ) {  // Replace with Number of Pages in Survey
+                        document.location = "https://ny-bible.github.io/summer-music-festival/confirmation.html";  //  Replace with the Page you want to send them to
+                    }
+                  });
+            </script>
                 
         </section>
 
